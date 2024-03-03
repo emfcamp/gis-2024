@@ -8,7 +8,7 @@
 	
 	"source_file": {
 		"site_plan": {
-			"path": "../gis-2022/emf2022.dxf",
+			"path": "../gis-2024/emf2024.dxf",
 			"auto_import_layers": "true",
 			"combine_lines": ["Structures"],
 			"force_polygon": ["Structures"]
@@ -21,9 +21,9 @@
 
         "plugins": {
             "power": {
-                "name": "Electromagnetic Field 2022",
+                "name": "Electromagnetic Field 2024",
                 "layer_prefix": "Power ... ",
-                "spec_dir": "../gis-2022/power"
+                "spec_dir": "../gis-2024/power"
             },
             "stats": {
                 "length": [
@@ -50,7 +50,7 @@
                 }
             },
             "noc": {
-                "name": "Electromagnetic Field 2022",
+                "name": "Electromagnetic Field 2024",
                 "layer_prefix": "NOC ... ",
                 "core": "NOCDC"
             }

@@ -1,7 +1,6 @@
 {
 	"stylesheet_path": "./styles",
 	"symbol_path": "./symbols",
-	"plugins": [],
 	"zoom_range": [ 7, 20 ],
 	"extents": [52.045, -2.37, 52.031, -2.393],
 	"source_projection": "epsg:27700",
@@ -17,42 +16,42 @@
 
 	"mapbox_vector_layer": {
             "attribution": "© Electromagnetic Field"
-        },
+    },
 
-        "plugins": {
-            "power": {
-                "name": "Electromagnetic Field 2024",
-                "layer_prefix": "Power ... ",
-                "spec_dir": "../gis-2024/power"
-            },
-            "stats": {
-                "length": [
-                    "Heras (internal)",
-                    "Heras (perimeter)", 
-                    "Pedestrian Barrier",
-                    "Lighting ... Festoon"
-                ],
-                "count": [
-                    "Fire ... Fire Blanket",
-                    "Fire ... Foam Extinguisher",
-                    "Fire ... Water Extinguisher",
-                    "Fire ... CO2 Extinguisher"
-                ],
-                "area": {
-                    "Camping": {
-                        "sql": "SELECT ST_Area(wkb_geometry) AS area, camping AS name FROM site_plan WHERE layer = 'Areas ... Camping' AND camping != 'Vehicles'",
-                        "density": 18
-                    },
-                    "Camping Vehicles": {
-                        "sql": "SELECT ST_Area(wkb_geometry) AS area, camping AS name FROM site_plan WHERE layer = 'Areas ... Camping' AND camping = 'Vehicles'",
-                        "density": 70
-                    }
+    "plugins": {
+        "power": {
+            "name": "Electromagnetic Field 2024",
+            "layer_prefix": "Power ... ",
+            "spec_dir": "../gis-2024/power"
+        },
+        "stats": {
+            "length": [
+                "Heras (internal)",
+                "Heras (perimeter)", 
+                "Pedestrian Barrier",
+                "Lighting ... Festoon"
+            ],
+            "count": [
+                "Fire ... Fire Blanket",
+                "Fire ... Foam Extinguisher",
+                "Fire ... Water Extinguisher",
+                "Fire ... CO2 Extinguisher"
+            ],
+            "area": {
+                "Camping": {
+                    "sql": "SELECT ST_Area(wkb_geometry) AS area, camping AS name FROM site_plan WHERE layer = 'Areas ... Camping' AND camping != 'Vehicles'",
+                    "density": 18
+                },
+                "Camping Vehicles": {
+                    "sql": "SELECT ST_Area(wkb_geometry) AS area, camping AS name FROM site_plan WHERE layer = 'Areas ... Camping' AND camping = 'Vehicles'",
+                    "density": 70
                 }
-            },
-            "noc": {
-                "name": "Electromagnetic Field 2024",
-                "layer_prefix": "NOC ... ",
-                "core": "NOCDC"
             }
+        },
+        "noc": {
+            "name": "Electromagnetic Field 2024",
+            "layer_prefix": "NOC ... ",
+            "core": "NOCDC"
         }
+    }
 }

@@ -39,11 +39,11 @@
             ],
             "area": {
                 "Camping": {
-                    "sql": "SELECT ST_Area(wkb_geometry) AS area, camping AS name FROM site_plan WHERE layer = 'Areas ... Camping' AND camping != 'Vehicles'",
+                    "sql": "SELECT ST_Area(wkb_geometry) AS area, camping AS name FROM site_plan WHERE layer = 'Areas ... Camping' AND camping !~ 'Vehicles.*'",
                     "density": 18
                 },
                 "Camping Vehicles": {
-                    "sql": "SELECT ST_Area(wkb_geometry) AS area, camping AS name FROM site_plan WHERE layer = 'Areas ... Camping' AND camping = 'Vehicles'",
+                    "sql": "SELECT ST_Area(wkb_geometry) AS area, camping AS name FROM site_plan WHERE layer = 'Areas ... Camping' AND camping ~ 'Vehicles.*'",
                     "density": 70
                 }
             }

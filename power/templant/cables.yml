@@ -3,7 +3,7 @@
   phases: 3
   connector: Powerlock
   csa: 120
-  lengths: [10, 25]
+  lengths: [5, 10, 25, 50, 75, 100]
 - rating: 125A
   type: cable
   phases: 3

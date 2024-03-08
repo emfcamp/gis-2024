@@ -81,6 +81,25 @@
       current: 63A
       phases: 3
       type: "IEC 60309"
+- ref: "EPS/63 6"
+  type: distro
+  inputs:
+    - current: 63A
+      phases: 3
+      type: "IEC 60309"
+  outputs:
+    - count: 12
+      current: 16A
+      type: "IEC 60309"
+      rcd: 30mA
+    - count: 6
+      current: 32A
+      type: "IEC 60309"
+      rcd: 30mA
+    - count: 1
+      current: 63A
+      phases: 3
+      type: "IEC 60309"
 - ref: SSB/16
   type: distro
   inputs:

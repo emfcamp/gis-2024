@@ -17,6 +17,10 @@
       phases: 3
       type: Powerlock
   outputs:
+    - current: 400A
+      rating: 250A
+      phases: 3
+      type: Powerlock
     - count: 4
       current: 63A
       phases: 3

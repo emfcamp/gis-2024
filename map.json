@@ -9,8 +9,7 @@
 		"site_plan": {
 			"path": "../gis-2024/emf2024.dxf",
 			"auto_import_layers": "true",
-			"combine_lines": ["Structures"],
-			"force_polygon": ["Structures"]
+			"combine_lines": ["Structures"]
 		}
 	},
 

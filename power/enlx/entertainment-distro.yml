@@ -1,0 +1,19 @@
+- ref: "63A 32A SOCA 16A"
+  url: https://www.enlx.co.uk/hire/power/distribution-units/63amp-3ph-1x-32a-3ph-mcb-3x-soca-18x-16a-rccbo-ide-systems
+  type: distro
+  inputs:
+    - current: 63A
+      phases: 3
+      type: "IEC 60309"
+  outputs:
+    - count: 18
+      current: 16A
+      type: "IEC 60309"
+      rcd: 30mA
+    - count: 1
+      current: 32A
+      phases: 3
+      type: "IEC 60309"
+    - count: 3
+      current: 16A
+      type: "Socapex"

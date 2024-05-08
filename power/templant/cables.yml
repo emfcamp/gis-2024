@@ -45,7 +45,7 @@
   phases: 1
   connector: "IEC 60309"
   csa: 6
-  lengths: [5, 10, 25] # 50 listed but not available
+  lengths: [10, 25] # 5 and 50 listed but not available
 - rating: 16A
   type: cable
   phases: 1

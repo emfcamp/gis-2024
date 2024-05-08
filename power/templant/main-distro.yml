@@ -9,6 +9,25 @@
       current: 400A
       phases: 3
       type: Powerlock
+- ref: "SPEC 1"
+  type: distro
+  inputs:
+    - current: 400A
+      phases: 3
+      type: Powerlock
+  outputs:
+    - current: 400A
+      phases: 3
+      type: Powerlock
+    - count: 4
+      current: 32A
+      phases: 1
+      type: "IEC 60309"
+    - count: 3
+      current: 63A
+      phases: 3
+      type: "IEC 60309"
+      rcd: 100-1000mA
 - ref: "SPEC 4"
   type: distro
   inputs:

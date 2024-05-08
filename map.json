@@ -13,6 +13,13 @@
 		}
 	},
 
+    "custom_layers": {
+        "camping_centroid": {
+            "query": "SELECT ST_AsBinary(ST_Transform(ST_Centroid(wkb_geometry), 3857)) AS geom, camping FROM site_plan WHERE layer = 'Areas ... Camping' AND wkb_geometry && ST_Transform(!BBOX!, 27700)",
+            "geometry_type": "Point"
+        }
+    },
+
 	"mapbox_vector_layer": {
             "attribution": "© Electromagnetic Field"
     },

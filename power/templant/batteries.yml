@@ -1,0 +1,26 @@
+- ref: battery-30-45
+  type: battery
+  capacity: 45 kWh
+  rating: 30 kVA
+  inputs:
+    - current: 125A
+      phases: 3
+      type: "IEC 60309"
+    - current: 63A
+      phases: 3
+      type: "IEC 60309"
+  outputs:
+    - current: 125A
+      phases: 3
+      type: "IEC 60309"
+    - current: 63A
+      phases: 3
+      type: "IEC 60309"
+    - current: 32A
+      phases: 3
+      type: "IEC 60309"
+    - count: 2
+      current: 32A
+      type: "IEC 60309"
+    - current: 16A
+      type: "IEC 60309"

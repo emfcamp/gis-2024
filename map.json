@@ -30,6 +30,9 @@
             "layer_prefix": "Power ... ",
             "spec_dir": "../gis-2024/power"
         },
+        "powerlabels": {
+            "layer_prefix": "Power ... "
+        },
         "stats": {
             "length": [
                 "Heras (internal)",
